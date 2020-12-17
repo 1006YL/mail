@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<filter>
+  <display-name>encodefiler</display-name>
+  <filter-name>encodefiler</filter-name>
+  <filter-class>filter.encodefiler</filter-class>
+ </filter>
+ <filter-mapping>
+  <filter-name>encodefiler</filter-name>
+  <url-pattern>/servlet/*</url-pattern>
+ </filter-mapping>
+
+  <welcome-file-list>
+    <welcome-file>mainpage.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>findserver</servlet-name>
+    <servlet-class>dao.findserver</servlet-class>
+    </servlet>
+        <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deletegoodserver</servlet-name>
+    <servlet-class>dao.deletegoodserver</servlet-class>
+    </servlet>
+    
+        <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>revisegoodserver</servlet-name>
+    <servlet-class>dao.revisegoodserver</servlet-class>
+    </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>controller.InitServlet</servlet-class>
+    </servlet>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddServlet</servlet-name>
+    <servlet-class>controller.AddServlet</servlet-class>
+    </servlet>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RemoveServlet</servlet-name>
+    <servlet-class>controller.RemoveServlet</servlet-class>
+    </servlet>
+    
+ 	<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>dao.UploadServlet</servlet-class>
+  	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showpageserver</servlet-name>
+    <servlet-class>dao.showpageserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>loginservlet</servlet-name>
+    <servlet-class>controller.loginservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>shoptakerfind</servlet-name>
+    <servlet-class>dao.shoptakerfind</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addgoodserver</servlet-name>
+    <servlet-class>dao.addgoodserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>managerfindserver</servlet-name>
+    <servlet-class>dao.managerfindserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteaccountserver</servlet-name>
+    <servlet-class>dao.deleteaccountserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addaccountserver</servlet-name>
+    <servlet-class>dao.addaccountserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>selectaccountserver</servlet-name>
+    <servlet-class>dao.selectaccountserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>inputorderserver</servlet-name>
+    <servlet-class>controller.inputorderserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>processordersserver</servlet-name>
+    <servlet-class>dao.processordersserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>reviseaccountserver</servlet-name>
+    <servlet-class>dao.reviseaccountserver</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>A</servlet-name>
+    <servlet-class>controller.A</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>txtreader</servlet-name>
+    <servlet-class>controller.txtreader</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>txtwriter</servlet-name>
+    <servlet-class>controller.txtwriter</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+   	<listener>
+		<listener-class>listener.SessionListener</listener-class>
+	</listener>
+
+   <servlet-mapping>
+    <servlet-name>findserver</servlet-name>
+    <url-pattern>/servlet/findserver</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>deletegoodserver</servlet-name>
+    <url-pattern>/servlet/deletegoodserver</url-pattern>
+  </servlet-mapping>
+       <servlet-mapping>
+    <servlet-name>revisegoodserver</servlet-name>
+    <url-pattern>/servlet/revisegoodserver</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/servlet/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showpageserver</servlet-name>
+    <url-pattern>/servlet/showpageserver</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/servlet/loginservlet</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/servlet/InitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddServlet</servlet-name>
+    <url-pattern>/servlet/AddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveServlet</servlet-name>
+    <url-pattern>/servlet/RemoveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>shoptakerfind</servlet-name>
+    <url-pattern>/servlet/shoptakerfind</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addgoodserver</servlet-name>
+    <url-pattern>/servlet/addgoodserver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>managerfindserver</servlet-name>
+    <url-pattern>/servlet/managerfindserver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteaccountserver</servlet-name>
+    <url-pattern>/servlet/deleteaccountserver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addaccountserver</servlet-name>
+    <url-pattern>/servlet/addaccountserver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectaccountserver</servlet-name>
+    <url-pattern>/servlet/selectaccountserver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>inputorderserver</servlet-name>
+    <url-pattern>/servlet/inputorderserver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>processordersserver</servlet-name>
+    <url-pattern>/servlet/processordersserver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>reviseaccountserver</servlet-name>
+    <url-pattern>/servlet/reviseaccountserver</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>A</servlet-name>
+    <url-pattern>/servlet/A</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>txtreader</servlet-name>
+    <url-pattern>/servlet/txtreader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>txtwriter</servlet-name>
+    <url-pattern>/servlet/txtwriter</url-pattern>
+  </servlet-mapping>
+</web-app>
